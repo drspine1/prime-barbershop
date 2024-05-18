@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ html{
+overflow-x: hidden;
+ }
+*{
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: rgb(246, 243, 225);
+
+}
+.choose_image-lg{
+  filter: saturate(0)
+  brightness(0.3);
+  transition: 0.5s;
+  
+}
+.choose-info-image:hover .choose_image-sm{
+  opacity: 0;
+}
+.choose-info-image:hover .choose_image-lg{
+  filter: brightness(1)
+  saturate(1);
+  top: 0;
+  left: 0;
+  
+
+}
+.choose-info-image:hover .choose_image-bg{
+  opacity: 0;
+}
+
+.choose-info-image:hover .choose_image-lg img{
+  border: 15px solid #e2d8b9;
+}
+.answer-container, .show-faq{
+  transition: 0.5s;
+}
+.nav-bar{
+  transition: 0.5s;
+}
+
+.active-nav{
+  position: relative;
+}
+.active-nav::after{
+  content: "";
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: cornsilk;
+  position: absolute;
+  left: calc(50% - 0.6rem);
+  transform: rotate(45deg);
+  margin-top: 0.9rem;
+}
+article.activeSlide{
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide{
+  transform: translateX(-100%);
+} 
+article.nextSlide{
+  transform: translateX(100%);
+}
+
+.about-body .left ul li{
+  list-style-type: disc;
+  margin: 0 5px;
+}
