@@ -74,7 +74,7 @@ const Price = () => {
 
         
       </div>
-      <Link to="/appointment" className="bg-[#fd8451] py-4 mt-6 block text-xl  px-6 mx-auto  uppercase font-semibold text-[#f4f2ec] rounded hover:bg-[#0e3746] transition-all duration-500 w-[20rem] ">make an  appointment</Link>
+      <Link to="/appointment" className="bg-[#fd8451] p-4 mt-6  text-lg   mx-auto  uppercase font-semibold text-[#f4f2ec] rounded hover:bg-[#0e3746]  block transition-all duration-500 w-[16rem]  ">make an  appointment</Link>
     </div>
     </>
    );

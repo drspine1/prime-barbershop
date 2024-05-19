@@ -12,9 +12,9 @@ const NavBar = () => {
   return ( 
     <>
     <header className="w-[100%] fixed top-0 left-0 h-[6rem] z-10">  
-      <nav className=" absolute flex justify-between items-start p-6 px-8 w-full h-full md:px-10 bg-[cornsilk]  ">
+      <nav className=" absolute flex justify-between items-start p-6 px-8 w-full h-full md:px-10 bg-[#faf7ea]  ">
       <div className="logo transform rotate-[-25deg] text-2xl  ">
-         <h1 className="italic text-[#fd8451] text-4xl ">prime</h1>
+         <h1 className="italic text-[#0e3746] font-semibold text-xl md:text-2xl ">prime</h1>
          <RxScissors className="w-14 "/> 
       </div>
       <ul className="mt-3 hidden md:block">
@@ -34,7 +34,7 @@ const NavBar = () => {
         <li className="block text-[#fd8451] font-semibold capitalize mx-3 text-2xl pb-4 text-center" onClick={()=>setShowNav(false)}><Link to="gallery">Gallery</Link></li>
         
       </ul>
-      <div className="toggle-btn mt-3 text-[#000] text-4xl font-bold block md:hidden " onClick={()=>setShowNav(!showNav)}>
+      <div className="toggle-btn mt-3 text-[#000] text-2xl font-bold block md:hidden " onClick={()=>setShowNav(!showNav)}>
          {showNav ? <LiaTimesSolid/> :<CiMenuFries/>}
       </div>
     </nav>

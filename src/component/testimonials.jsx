@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import testimonyData from "./testData"
 import {motion} from "framer-motion"
+import { SlArrowLeft } from "react-icons/sl";
+import { SlArrowRight } from "react-icons/sl";
 console.log(testimonyData)
 const Testimonials = () => {
    const [testimonies,setTestimony] = useState(testimonyData)
@@ -60,8 +62,8 @@ const Testimonials = () => {
          
     </div>
                <div className="buttons mt-6 flex justify-center">
-                <button className="mx-4 bg-[#fd8451] py-2 px-4 uppercase text-xl rounded text-[#f4f2ec] font-semibold hover:bg-[#0e3746] transition-all duration-500" onClick={() => setIndex(index -1)}>prev</button>
-                <button className="mx-4 bg-[#fd8451] py-2 px-4 uppercase text-xl rounded text-[#f4f2ec] font-semibold hover:bg-[#0e3746] transition-all duration-500" onClick={() => setIndex(index +1)}>next</button>
+                <button className="mx-4 bg-[#fd8451] py-2 px-4 uppercase text-xl rounded text-[#f4f2ec] font-semibold hover:bg-[#0e3746] transition-all duration-500" onClick={() => setIndex(index -1)}><SlArrowLeft/></button>
+                <button className="mx-4 bg-[#fd8451] py-2 px-4 uppercase text-xl rounded text-[#f4f2ec] font-semibold hover:bg-[#0e3746] transition-all duration-500" onClick={() => setIndex(index +1)}><SlArrowRight/></button>
                </div>
         </motion.div>
     

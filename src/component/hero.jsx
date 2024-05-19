@@ -15,7 +15,7 @@ const HeroSection = () => {
             <h1 className="text-[#fd8451] uppercase font-medium text-3xl md:text-4xl  leading-snug   pb-8">our hair styles <br /><span className="text-[#f3c8b5] mt-3 block">enhances your style</span></h1>
             
             <div className="baground"></div>
-            <p className="text-white text-2xl  ">prime is the best teritory created for men who appreciates premium quality,time and flawless look</p>
+           
             <Link to="/appointment" className="border transition duration-500  w-[16rem] border-[rgb(243,200,181)] text-[white] p-3 uppercase text-lg font-medium hover:bg-[#fd8451] block mt-14 ">make an appointment</Link>
           </motion.div>
       </div>
